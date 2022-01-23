@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import Home from './views/Home/Home';
+import Page from './views/Page/Page';
 
 function App() {
+
+  const [allPokemons, setAllPokemons] = useState([]);
+
+  const getAllPokemons = async () => {
+    const res = await fetch('https://pokeapi.co/api/v2/pokemon/')
+    const data = await res.json()
+    setAllPokemons(data.results)
+
+  } 
+
+  useEffect(() => {
+    getAllPokemons()
+  }, []);
+
+  // allPokemons.map(pokemon => {console.log(pokemon.name)})
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+      <BrowserRouter>
+        <Routes>
+          <Route path = "/" element={<Home />}/>
+          <Route path ='bulbasaur' element={<Page />}/>
+          <Route path ='ivysaur' element={<Page />}/>
+          {/* {
+            allPokemons.map(pokemon => {
+              
+            })
+          } */}
+          
+        </Routes>
+      </BrowserRouter>
+
   );
 }
 

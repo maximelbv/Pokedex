@@ -1,0 +1,53 @@
+:root {
+  --radius: 5px;
+  --margin: 0px;
+  --shadow-inset: inset 9px 9px 9px 0 rgba(206, 206, 206, 0.3), 
+                  inset -9px -9px 9px 0 rgba(255, 255, 255, 0.6);
+  --shadow-convex: inset -9px -9px 9px 0 rgba(206, 206, 206, 0.3), 
+                  inset 9px 9px 9px 0 rgba(255, 255, 255, 0.6);
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  // background: var(--bg);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+button {
+  display: flex;
+  fill: #689F38;
+  cursor: pointer;
+}
+button:focus,
+button:active {
+  outline: none;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 30px;
+}
+
+.panel {
+    width: 300px;
+    height: 100px;
+}
+.neumorph {
+    border-radius: var(--radius);
+    border: none;
+    margin: var(--margin);
+    padding: var(--margin);
+}
+
+.neumorph--pushed {
+  box-shadow: var(--shadow-inset), var(--shadow);
+}
+.neumorph--pushed-only {
+  box-shadow: var(--shadow-inset);
+}
+.neumorph--convex {
+  box-shadow: var(--shadow-convex), var(--shadow);
+}

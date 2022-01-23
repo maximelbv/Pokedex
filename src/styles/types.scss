@@ -1,0 +1,135 @@
+// .normal {background:rgba(169, 166, 123, .35)}
+// .electric {background:rgba(240, 211, 45, .35)}
+// .fairy {background:rgba(214, 133, 173, .35)}
+// .water {background:rgba(98, 143, 239, .35)}
+// .poison {background:rgba(162, 62, 160, .35)}
+// .ghost {background:rgba(116, 87, 151, .35)}
+// .ground {background:rgba(226, 191, 101, .35)}
+// .fighting {background:rgba(194, 47, 40, .35)}
+// .fire {background:rgba(237, 128, 50, .35)}
+// .steel {background:rgba(183, 184, 205, .35)}
+// .flying {background:rgba(59, 51, 78, 0.35)}
+// .bug {background:rgba(167, 185, 22, .35)}
+// .psychic {background:rgba(248, 83, 134, .35)}
+// .dark {background:rgba(113, 86, 72, .35)}
+// .dragon {background:rgba(113, 52, 252, .35)}
+// .ice {background:rgba(151, 216, 216, .35)}
+// .rock {background:rgba(182, 160, 55, .35)}
+// .grass {
+//     background:linear-gradient(270deg, rgba(123,199,75,1) 0%, rgba(69,69,69,1) 100%);
+//     .type {
+//         background: rgba(123, 199, 75, .5);
+//         padding: 5px;
+//         border-radius: 5px;
+//     }
+// }
+
+.normal {
+    background:linear-gradient(360deg, rgba(169,166,123, .8) 0%, rgba(169,166,123, 1) 100%);
+    .type {background: rgb(194, 190, 140);}
+}
+
+.electric {
+    background: linear-gradient(360deg, rgba(240, 211, 45, .8) 0%, rgba(240, 211, 45, 1) 100%);
+    .type {background: rgb(255, 229, 80);}
+}
+
+.fairy {
+    background: linear-gradient(360deg, rgba(214, 133, 173, .8) 0%, rgba(214, 133, 173, 1) 100%);
+    .type {background: rgb(255, 145, 200);}
+}
+
+.water {
+    background: linear-gradient(360deg, rgba(98, 143, 239, .8) 0%, rgba(98, 143, 239, 1) 100%);
+    .type {background: rgb(147, 181, 255);}
+}
+
+.poison {
+    background: linear-gradient(360deg, rgba(162, 62, 160, .8) 0%, rgba(162, 62, 160, 1) 100%);
+    .type {background: rgb(192, 106, 191);}
+}
+
+.ghost {
+    background: linear-gradient(360deg, rgba(116, 87, 151, .8) 0%, rgba(116, 87, 151, 1) 100%);
+    .type {background: rgb(159, 122, 206);}
+}
+
+.ground {
+    background: linear-gradient(360deg, rgba(226, 191, 101, .8) 0%, rgba(226, 191, 101, 1) 100%);
+    .type {background: rgb(246, 213, 129);}
+}
+
+.fighting {
+    background: linear-gradient(360deg, rgba(194, 47, 40, .8) 0%, rgba(194, 47, 40, 1) 100%);
+    .type {background: rgb(233, 71, 62);}
+}
+
+.fire {
+    background: linear-gradient(360deg, rgba(237, 128, 50, .8) 0%, rgba(237, 128, 50, 1) 100%);
+    .type {background: rgb(255, 154, 82);}
+}
+
+.steel {
+    background: linear-gradient(360deg, rgba(183, 184, 205, .8) 0%, rgba(183, 184, 205, 1) 100%);
+    .type {background: rgb(208, 209, 228);}
+}
+
+.flying {
+    background: linear-gradient(360deg, rgba(170, 142, 243, .8) 0%, rgba(170, 142, 243, 1) 100%);
+    .type {background: rgb(190, 164, 255);}
+}
+
+.bug {
+    background: linear-gradient(360deg, rgba(188, 206, 59, 0.8) 0%, rgb(188, 206, 59) 100%);
+    .type {background: rgb(206, 224, 69);}
+}
+
+.psychic {
+    background: linear-gradient(360deg, rgba(248, 83, 134, .8) 0%, rgba(248, 83, 134, 1) 100%);
+    .type {background: rgb(255, 118, 162);}
+}
+
+.dark {
+    background: linear-gradient(360deg, rgba(113, 86, 72, .8) 0%, rgba(113, 86, 72, 1) 100%);
+    .type {background: rgb(165, 126, 107);}
+}
+
+.dragon {
+    background: linear-gradient(360deg, rgba(113, 52, 252, .8) 0%, rgba(113, 52, 252, 1) 100%);
+    .type {background: rgb(138, 88, 255);}
+}
+
+.ice {
+    background: linear-gradient(360deg, rgba(151, 216, 216, .8) 0%, rgba(151, 216, 216, 1) 100%);
+    .type {background: rgb(176, 250, 250);}
+}
+
+.rock {
+    background: linear-gradient(360deg, rgba(182, 160, 55, .8) 0%, rgba(182, 160, 55, 1) 100%);
+    .type {background: rgb(207, 184, 65);}
+}
+
+.grass {
+    background: linear-gradient(360deg, rgba(123,199,75,.8) 0%, rgba(123,199,75,1) 100%);
+    .type {background: rgb(149, 221, 104);}
+}
+
+
+.Thumbnail:hover > .normal {background:linear-gradient(360deg, rgba(169,166,123, .6) 0%, rgba(169,166,123, 1) 100%);}
+.Thumbnail:hover > .electric {background: linear-gradient(360deg, rgba(240, 211, 45, .6) 0%, rgba(240, 211, 45, 1) 100%);}
+.Thumbnail:hover > .fairy {background: linear-gradient(360deg, rgba(214, 133, 173, .6) 0%, rgba(214, 133, 173, 1) 100%);}
+.Thumbnail:hover > .water {background: linear-gradient(360deg, rgba(98, 143, 239, .6) 0%, rgba(98, 143, 239, 1) 100%);}
+.Thumbnail:hover > .poison {background: linear-gradient(360deg, rgba(162, 62, 160, .6) 0%, rgba(162, 62, 160, 1) 100%);}
+.Thumbnail:hover > .ghost {background: linear-gradient(360deg, rgba(116, 87, 151, .6) 0%, rgba(116, 87, 151, 1) 100%);}
+.Thumbnail:hover > .ground {background: linear-gradient(360deg, rgba(226, 191, 101, .6) 0%, rgba(226, 191, 101, 1) 100%);}
+.Thumbnail:hover > .fighting {background: linear-gradient(360deg, rgba(194, 47, 40, .6) 0%, rgba(194, 47, 40, 1) 100%);}
+.Thumbnail:hover > .fire {background: linear-gradient(360deg, rgba(237, 128, 50, .6) 0%, rgba(237, 128, 50, 1) 100%);}
+.Thumbnail:hover > .steel {background: linear-gradient(360deg, rgba(183, 184, 205, .6) 0%, rgba(183, 184, 205, 1) 100%);}
+.Thumbnail:hover > .flying {background: linear-gradient(360deg, rgba(170, 142, 243, .6) 0%, rgba(170, 142, 243, 1) 100%);}
+.Thumbnail:hover > .bug {background: linear-gradient(360deg, rgba(188, 206, 59, 0.6) 0%, rgb(188, 206, 59) 100%);}
+.Thumbnail:hover > .psychic {background: linear-gradient(360deg, rgba(248, 83, 134, .6) 0%, rgba(248, 83, 134, 1) 100%);}
+.Thumbnail:hover > .dark {background: linear-gradient(360deg, rgba(113, 86, 72, .6) 0%, rgba(113, 86, 72, 1) 100%);}
+.Thumbnail:hover > .dragon {background: linear-gradient(360deg, rgba(113, 52, 252, .6) 0%, rgba(113, 52, 252, 1) 100%);}
+.Thumbnail:hover > .ice {background: linear-gradient(360deg, rgba(151, 216, 216, .6) 0%, rgba(151, 216, 216, 1) 100%);}
+.Thumbnail:hover > .rock {background: linear-gradient(360deg, rgba(182, 160, 55, .6) 0%, rgba(182, 160, 55, 1) 100%);}
+.Thumbnail:hover > .grass {background: linear-gradient(360deg, rgba(123,199,75,.6) 0%, rgba(123,199,75,1) 100%);}
