@@ -21,7 +21,7 @@ const Page = () => {
     return (
         <div>
             <h1>{pokemon.name}</h1>
-            <img src={pokemon.sprites.other.home.front_default} />
+            {/* <img src={pokemon.sprites.other.home.front_default} /> */}
         </div>
     );
 }

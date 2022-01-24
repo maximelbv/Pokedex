@@ -17,9 +17,20 @@
         width: 135px;
         transition: 300ms ease-in-out;
     }
+    
+    &:hover > .typeName {
+        // display: inline;
+        color: red;
+    }
 
-    &:hover {
-        overflow: hidden;
+    &:hover > .details .types .type .typeName {
+        transition: 300ms ease-in-out;
+        width: 100%;
+    }
+
+    &:hover > .details .types .type .typeImg {
+        transition: 300ms ease-in-out;
+        display: none;
     }
 
     .details {
@@ -54,15 +65,33 @@
         left: 10px;
     }
 
-    .type {
-        border-radius: 5px;
-        padding: 3px;
+    .types {
+        display: flex;
         font-size: 10px;
         position: absolute;
         bottom: 10px;
         left: 10px;
         color: white;
+        .type {
+            display: flex;
+            background-position: center;
+            background-size: 15px;
+            background-repeat: no-repeat;
+            padding: 3px;
+            border-radius: 5px;
+            margin-right: 5px;
+        .typeImg {
+            // margin-right: 5px;
+            width: 15px;
+            height: 15px;
+            background-position: center;
+            background-size: contain;
+        }
+        .typeName {
+            display:block;
+            width: 0;
+            overflow: hidden;
+        }
+        }
     }
-
-
 }

@@ -27,11 +27,11 @@ function App() {
           <Route path = "/" element={<Home />}/>
           <Route path ='bulbasaur' element={<Page />}/>
           <Route path ='ivysaur' element={<Page />}/>
-          {/* {
-            allPokemons.map(pokemon => {
-              
-            })
-          } */}
+          {
+            allPokemons.map(pokemon => 
+              <Route path ={pokemon.name} element={<Page />}/>
+            )
+          }
           
         </Routes>
       </BrowserRouter>
