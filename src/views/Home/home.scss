@@ -21,7 +21,7 @@
         margin: auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 1.5rem;
+        grid-gap: 1rem;
         row-gap: .75rem;
     }
 
@@ -35,5 +35,6 @@
         align-items: center;
         justify-content: center;
         color: white;
+        margin: auto;
     }
 }

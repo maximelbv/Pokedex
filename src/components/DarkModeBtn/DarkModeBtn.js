@@ -1,23 +1,44 @@
 import React from 'react';
+import './DarkModeBtn.scss';
 
 const Darkmodebtn = () => {
 
+	let clickedClass = 'clicked';
+	const body = document.body;
+	const lightTheme = 'lightTheme';
+	const darkTheme = 'darkTheme';
+	let theme;
 
-	function darkMode() {
-		if (document.querySelector('.darkModeInput').checked==true) {
-			document.querySelector('body').classList.add('darkMode');
-			localStorage.setitem('mode', 'dark');
-		}
-		else if (document.querySelector('.darkModeInput').checked==false) {
-			document.querySelector('body').classList.remove('darkMode').classList.add('lightMode');
-			localStorage.setitem('mode', 'light');
+	if (localStorage) {
+		theme = localStorage.getItem('theme');
+	}
+
+	if (theme === lightTheme || theme === darkTheme) {
+		body.classList.add(theme);
+	} else {
+		body.classList.add(lightTheme);
+	}
+
+	const switchTheme = (e) => {
+		if (theme === darkTheme) {
+			body.classList.replace(darkTheme, lightTheme);
+			e.target.classList.remove(clickedClass);
+			localStorage.setItem('theme', 'lightTheme');
+			theme = lightTheme;
+		} else {
+			body.classList.replace(lightTheme, darkTheme);
+			e.target.classList.add(clickedClass);
+			localStorage.setItem('theme', 'darkTheme');
+			theme = darkTheme;
 		}
 	}
 
 	return (
-		<div>
-			<label>Dark mode<input className='darkModeInput' type='checkbox' onChange={() => {darkMode()}}></input></label>
-		</div>
+		<button 
+			className={theme === 'darkTheme' ? clickedClass : ''}
+			id='DarkModeBtn'
+			onClick={(e) => {switchTheme(e)}}>
+		</button>
 	);
 }
 

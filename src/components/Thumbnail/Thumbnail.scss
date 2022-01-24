@@ -8,9 +8,18 @@
     position: relative;
     border-radius: 10px;
 
-    &:hover > .details {
+    &:hover > .details{
         height: 100%;
         transition: 300ms ease-in-out;
+    }
+
+    &:hover > .image{
+        width: 135px;
+        transition: 300ms ease-in-out;
+    }
+
+    &:hover {
+        overflow: hidden;
     }
 
     .details {
