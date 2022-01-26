@@ -17,52 +17,49 @@
         width: 135px;
         transition: 300ms ease-in-out;
     }
-    
-    &:hover > .typeName {
-        // display: inline;
-        color: red;
-    }
 
     &:hover > .details .types .type .typeName {
         transition: 300ms ease-in-out;
-        width: 100%;
+        width: auto;
     }
 
     &:hover > .details .types .type .typeImg {
-        transition: 300ms ease-in-out;
-        display: none;
+        transition: 200ms ease-in-out;
+        margin-right: 5px;
     }
 
     .details {
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        font-size: 15px;
+        color: rgb(255, 255, 255);
+        letter-spacing: 2.2px;
+        font-size: 12px;
         font-weight: 600;
         display: flex;
         padding: 10px;
         width: 100%;
-        height:50%; 
+        height:100%; 
         overflow: hidden
     }
 
-    .image {
+    .imageBg {
         position: absolute;
         right: 0;
         bottom: 0;
-        width: 150px;
+        width: 100px;
+        height: auto;
+        background-size: 125%;
+        background-repeat: no-repeat;
+        @media screen and (min-width: 1024px) {
+            width: 115px;
+        }
     }
+
+    .image {
+        width: 100%;
+    }
+
 
     .number {
-
-        color: rgb(255, 255, 255);
-        top: 10px;
-        left: 10px;
-    }
-
-    .name {
-        color: rgb(255, 255, 255);
-        top: 37.5px;
-        left: 10px;
+        opacity: .7;
     }
 
     .types {
@@ -81,11 +78,12 @@
             border-radius: 5px;
             margin-right: 5px;
         .typeImg {
-            // margin-right: 5px;
             width: 15px;
             height: 15px;
+            padding: 0;
             background-position: center;
             background-size: contain;
+            background-repeat: no-repeat;
         }
         .typeName {
             display:block;

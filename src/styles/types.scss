@@ -2,7 +2,7 @@
     background:linear-gradient(360deg, rgba(169,166,123, .8) 0%, rgba(169,166,123, 1) 100%);
     &type {background: rgb(194, 190, 140);}
     &typeImg{
-        background-image: url('../assets/icons/normal.svg');
+        background-image: url('../assets/icons/classic/normal.svg');
         background-position: center;
         background-size: contain;
     }
@@ -12,7 +12,7 @@
     background: linear-gradient(360deg, rgba(240, 211, 45, .8) 0%, rgba(240, 211, 45, 1) 100%);
     &type {background: rgb(255, 229, 80);}
     &typeImg{
-        background-image: url('../assets/icons/electric.svg');
+        background-image: url('../assets/icons/classic/electric.svg');
         background-position: center;
         background-size: contain;
     }
@@ -22,7 +22,7 @@
     background: linear-gradient(360deg, rgba(214, 133, 173, .8) 0%, rgba(214, 133, 173, 1) 100%);
     &type {background: rgb(255, 145, 200);}
     &typeImg{
-        background-image: url('../assets/icons/fairy.svg');
+        background-image: url('../assets/icons/classic/fairy.svg');
         background-position: center;
         background-size: contain;
     }
@@ -32,7 +32,7 @@
     background: linear-gradient(360deg, rgba(98, 143, 239, .8) 0%, rgba(98, 143, 239, 1) 100%);
     &type {background: rgb(147, 181, 255);}
     &typeImg{
-        background-image: url('../assets/icons/water.svg');
+        background-image: url('../assets/icons/classic/water.svg');
         background-position: center;
         background-size: contain;
     }
@@ -42,7 +42,7 @@
     background: linear-gradient(360deg, rgba(162, 62, 160, .8) 0%, rgba(162, 62, 160, 1) 100%);
     &type {background: rgb(192, 106, 191);}
     &typeImg{
-        background-image: url('../assets/icons/poison.svg');
+        background-image: url('../assets/icons/classic/poison.svg');
         background-position: center;
         background-size: contain;
     }
@@ -52,7 +52,7 @@
     background: linear-gradient(360deg, rgba(116, 87, 151, .8) 0%, rgba(116, 87, 151, 1) 100%);
     &type {background: rgb(159, 122, 206);}
     &typeImg{
-        background-image: url('../assets/icons/ghost.svg');
+        background-image: url('../assets/icons/classic/ghost.svg');
         background-position: center;
         background-size: contain;
     }
@@ -62,7 +62,7 @@
     background: linear-gradient(360deg, rgba(226, 191, 101, .8) 0%, rgba(226, 191, 101, 1) 100%);
     &type {background: rgb(246, 213, 129);}
     &typeImg{
-        background-image: url('../assets/icons/ground.svg');
+        background-image: url('../assets/icons/classic/ground.svg');
         background-position: center;
         background-size: contain;
     }
@@ -72,7 +72,7 @@
     background: linear-gradient(360deg, rgba(194, 47, 40, .8) 0%, rgba(194, 47, 40, 1) 100%);
     &type {background: rgb(233, 71, 62);}
     &typeImg{
-        background-image: url('../assets/icons/fighting.svg');
+        background-image: url('../assets/icons/classic/fighting.svg');
         background-position: center;
         background-size: contain;
     }
@@ -82,7 +82,7 @@
     background: linear-gradient(360deg, rgba(237, 128, 50, .8) 0%, rgba(237, 128, 50, 1) 100%);
     &type {background: rgb(255, 154, 82);}
     &typeImg{
-        background-image: url('../assets/icons/fire.svg');
+        background-image: url('../assets/icons/classic/fire.svg');
         background-position: center;
         background-size: contain;
     }
@@ -92,7 +92,7 @@
     background: linear-gradient(360deg, rgba(183, 184, 205, .8) 0%, rgba(183, 184, 205, 1) 100%);
     &type {background: rgb(208, 209, 228);}
     &typeImg{
-        background-image: url('../assets/icons/steel.svg');
+        background-image: url('../assets/icons/classic/steel.svg');
         background-position: center;
         background-size: contain;
     }
@@ -102,7 +102,7 @@
     background: linear-gradient(360deg, rgba(170, 142, 243, .8) 0%, rgba(170, 142, 243, 1) 100%);
     &type {background: rgb(190, 164, 255);}
     &typeImg{
-        background-image: url('../assets/icons/flying.svg');
+        background-image: url('../assets/icons/classic/flying.svg');
         background-position: center;
         background-size: contain;
     }
@@ -112,7 +112,7 @@
     background: linear-gradient(360deg, rgba(188, 206, 59, 0.8) 0%, rgb(188, 206, 59) 100%);
     &type {background: rgb(206, 224, 69);}
     &typeImg{
-        background-image: url('../assets/icons/bug.svg');
+        background-image: url('../assets/icons/classic/bug.svg');
         background-position: center;
         background-size: contain;
     }
@@ -122,7 +122,7 @@
     background: linear-gradient(360deg, rgba(248, 83, 134, .8) 0%, rgba(248, 83, 134, 1) 100%);
     &type {background: rgb(255, 118, 162);}
     &typeImg{
-        background-image: url('../assets/icons/psychic.svg');
+        background-image: url('../assets/icons/classic/psychic.svg');
         background-position: center;
         background-size: contain;
     }
@@ -132,7 +132,7 @@
     background: linear-gradient(360deg, rgba(113, 86, 72, .8) 0%, rgba(113, 86, 72, 1) 100%);
     &type {background: rgb(165, 126, 107);}
     &typeImg{
-        background-image: url('../assets/icons/dark.svg');
+        background-image: url('../assets/icons/classic/dark.svg');
         background-position: center;
         background-size: contain;
     }
@@ -142,7 +142,7 @@
     background: linear-gradient(360deg, rgba(113, 52, 252, .8) 0%, rgba(113, 52, 252, 1) 100%);
     &type {background: rgb(138, 88, 255);}
     &typeImg{
-        background-image: url('../assets/icons/dragon.svg');
+        background-image: url('../assets/icons/classic/dragon.svg');
         background-position: center;
         background-size: contain;
     }
@@ -152,7 +152,7 @@
     background: linear-gradient(360deg, rgba(151, 216, 216, .8) 0%, rgba(151, 216, 216, 1) 100%);
     &type {background: rgb(176, 250, 250);}
     &typeImg{
-        background-image: url('../assets/icons/ice.svg');
+        background-image: url('../assets/icons/classic/ice.svg');
         background-position: center;
         background-size: contain;
     }
@@ -162,7 +162,7 @@
     background: linear-gradient(360deg, rgba(182, 160, 55, .8) 0%, rgba(182, 160, 55, 1) 100%);
     &type {background: rgb(207, 184, 65);}
     &typeImg{
-        background-image: url('../assets/icons/rock.svg');
+        background-image: url('../assets/icons/classic/rock.svg');
         background-position: center;
         background-size: contain;
     }
@@ -172,28 +172,84 @@
     background: linear-gradient(360deg, rgba(123,199,75,.8) 0%, rgba(123,199,75,1) 100%);
     &type {background: rgb(149, 221, 104);}
     &typeImg{
-        background-image: url('../assets/icons/grass.svg');
+        background-image: url('../assets/icons/classic/grass.svg');
         background-position: center;
         background-size: contain;
     }
 }
 
 
-.Thumbnail:hover > .normal {background:linear-gradient(360deg, rgba(169,166,123, .6) 0%, rgba(169,166,123, 1) 100%);}
-.Thumbnail:hover > .electric {background: linear-gradient(360deg, rgba(240, 211, 45, .6) 0%, rgba(240, 211, 45, 1) 100%);}
-.Thumbnail:hover > .fairy {background: linear-gradient(360deg, rgba(214, 133, 173, .6) 0%, rgba(214, 133, 173, 1) 100%);}
-.Thumbnail:hover > .water {background: linear-gradient(360deg, rgba(98, 143, 239, .6) 0%, rgba(98, 143, 239, 1) 100%);}
-.Thumbnail:hover > .poison {background: linear-gradient(360deg, rgba(162, 62, 160, .6) 0%, rgba(162, 62, 160, 1) 100%);}
-.Thumbnail:hover > .ghost {background: linear-gradient(360deg, rgba(116, 87, 151, .6) 0%, rgba(116, 87, 151, 1) 100%);}
-.Thumbnail:hover > .ground {background: linear-gradient(360deg, rgba(226, 191, 101, .6) 0%, rgba(226, 191, 101, 1) 100%);}
-.Thumbnail:hover > .fighting {background: linear-gradient(360deg, rgba(194, 47, 40, .6) 0%, rgba(194, 47, 40, 1) 100%);}
-.Thumbnail:hover > .fire {background: linear-gradient(360deg, rgba(237, 128, 50, .6) 0%, rgba(237, 128, 50, 1) 100%);}
-.Thumbnail:hover > .steel {background: linear-gradient(360deg, rgba(183, 184, 205, .6) 0%, rgba(183, 184, 205, 1) 100%);}
-.Thumbnail:hover > .flying {background: linear-gradient(360deg, rgba(170, 142, 243, .6) 0%, rgba(170, 142, 243, 1) 100%);}
-.Thumbnail:hover > .bug {background: linear-gradient(360deg, rgba(188, 206, 59, 0.6) 0%, rgb(188, 206, 59) 100%);}
-.Thumbnail:hover > .psychic {background: linear-gradient(360deg, rgba(248, 83, 134, .6) 0%, rgba(248, 83, 134, 1) 100%);}
-.Thumbnail:hover > .dark {background: linear-gradient(360deg, rgba(113, 86, 72, .6) 0%, rgba(113, 86, 72, 1) 100%);}
-.Thumbnail:hover > .dragon {background: linear-gradient(360deg, rgba(113, 52, 252, .6) 0%, rgba(113, 52, 252, 1) 100%);}
-.Thumbnail:hover > .ice {background: linear-gradient(360deg, rgba(151, 216, 216, .6) 0%, rgba(151, 216, 216, 1) 100%);}
-.Thumbnail:hover > .rock {background: linear-gradient(360deg, rgba(182, 160, 55, .6) 0%, rgba(182, 160, 55, 1) 100%);}
-.Thumbnail:hover > .grass {background: linear-gradient(360deg, rgba(123,199,75,.6) 0%, rgba(123,199,75,1) 100%);}
+.normal {
+    background:linear-gradient(135deg, rgb(216, 212, 158) 0%, rgba(169,166,123, 1) 100%);
+    &Bg {background-image: url('../assets/icons/transparent/normal.svg')}
+}
+.electric {
+    background: linear-gradient(135deg, rgb(255, 234, 114) 0%, rgb(206, 179, 27) 100%);
+    &Bg {background-image: url('../assets/icons/transparent/electric.svg')}
+}
+.fairy {
+    background: linear-gradient(135deg, rgb(255, 175, 215) 0%, rgba(214, 133, 173, 1) 100%);
+    &Bg {background-image: url('../assets/icons/transparent/fairy.svg')} 
+}
+.water {
+    background: linear-gradient(135deg, rgb(161, 191, 255) 0%, rgba(98, 143, 239, 1) 100%);
+    &Bg {background-image: url('../assets/icons/transparent/water.svg')}
+}
+.poison {
+    background: linear-gradient(135deg, rgb(212, 93, 210) 0%, rgba(162, 62, 160, 1) 100%);
+    &Bg {background-image: url('../assets/icons/transparent/poison.svg')}
+}
+.ghost {
+    background: linear-gradient(135deg, rgb(173, 136, 218) 0%, rgba(116, 87, 151, 1) 100%);
+    &Bg {background-image: url('../assets/icons/transparent/ghost.svg')}
+}
+.ground {
+    background: linear-gradient(135deg, rgb(250, 217, 134) 0%, rgba(226, 191, 101, 1) 100%);
+    &Bg {background-image: url('../assets/icons/transparent/ground.svg')}
+}
+.fighting {
+    background: linear-gradient(135deg, rgb(224, 128, 123) 0%, rgba(194, 47, 40, 1) 100%);
+    &Bg {background-image: url('../assets/icons/transparent/fighting.svg')}
+}
+.fire {
+    background: linear-gradient(135deg, rgb(255, 179, 124) 0%, rgba(237, 128, 50, 1) 100%);
+    &Bg {background-image: url('../assets/icons/transparent/fire.svg')}
+}
+.steel {
+    background: linear-gradient(135deg, rgb(215, 216, 240) 0%, rgba(183, 184, 205, 1) 100%);
+    &Bg {background-image: url('../assets/icons/transparent/steel.svg')}
+}
+.flying {
+    background: linear-gradient(135deg, rgb(201, 180, 255) 0%, rgba(170, 142, 243, 1) 100%);
+    &Bg {background-image: url('../assets/icons/transparent/flying.svg')}
+}
+.bug {
+    background: linear-gradient(135deg, rgb(204, 218, 100) 0%, rgb(188, 206, 59) 100%);
+    &Bg {background-image: url('../assets/icons/transparent/bug.svg')}
+}
+.psychic {
+    background: linear-gradient(135deg, rgb(255, 133, 171) 0%, rgba(248, 83, 134, 1) 100%);
+    &Bg {background-image: url('../assets/icons/transparent/psychic.svg')}
+}
+.dark {
+    background: linear-gradient(135deg, rgb(165, 127, 108) 0%, rgba(113, 86, 72, 1) 100%);
+    &Bg {background-image: url('../assets/icons/transparent/dark.svg')}
+}
+.dragon {
+    background: linear-gradient(135deg, rgb(155, 112, 255) 0%, rgba(113, 52, 252, 1) 100%);
+    &Bg {background-image: url('../assets/icons/transparent/dragon.svg')}
+}
+.ice {
+    background: linear-gradient(135deg, rgb(167, 238, 238) 0%, rgba(151, 216, 216, 1) 100%);
+    &Bg {background-image: url('../assets/icons/transparent/ice.svg')}
+}
+.rock {
+    background: linear-gradient(135deg, rgb(207, 192, 116) 0%, rgba(182, 160, 55, 1) 100%);
+    &Bg {background-image: url('../assets/icons/transparent/rock.svg')}
+}
+.grass {
+    background: linear-gradient(135deg, rgb(177, 239, 139) 0%, rgba(123,199,75,1) 100%);
+    &Bg {background-image: url('../assets/icons/transparent/grass.svg')}
+}
+
+

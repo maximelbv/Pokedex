@@ -1,6 +1,6 @@
 .Home {
     margin: auto;
-    padding-top: 40px;
+    padding: 20px;
     max-width: 1100px;
 
     .searchInput {
@@ -20,9 +20,18 @@
         width: 100%;
         margin: auto;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 1rem;
-        row-gap: .75rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: .5rem;
+        @media screen and (min-width: 347px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media screen and (min-width: 568px) {
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: .7rem;
+        }
+        @media screen and (min-width: 1024px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
     }
 
     .loadMore {
@@ -37,4 +46,5 @@
         color: white;
         margin: auto;
     }
+
 }

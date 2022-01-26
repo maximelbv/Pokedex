@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 import Thumbnail from '../../components/Thumbnail/Thumbnail';
 import './home.scss'
-import '../../styles/neumorphism.scss'
-import Darkmodebtn from '../../components/DarkModeBtn/DarkModeBtn';
+import Header from '../../components/Header/Header';
 
 function Home() {
 
@@ -47,7 +46,7 @@ function Home() {
   return (
     <div className="Home">
 
-      <h1>Pokédex</h1>
+      <Header />
 
       <input 
         type='text' 
@@ -56,9 +55,6 @@ function Home() {
         onChange={(event) => {setSearchTerm(event.target.value); console.log(searchTerm)}}>
         
       </input>
-
-      {/* <label>Dark mode<input className='darkModeInput' type='checkbox' onChange={() => {darkMode()}}></input></label> */}
-      <Darkmodebtn />
 
       <div className="pokemonContainer">
         <div className="allContainer">
@@ -69,8 +65,8 @@ function Home() {
             } else if (val.name.toLowerCase().includes(searchTerm.toLowerCase())) {
               return val
             }
-          }).map(pokemon => 
-           <Thumbnail pokemon={pokemon}/> 
+          }).map((pokemon,i) => 
+           <Thumbnail pokemon={pokemon} key={i}/> 
           )}
 
         </div>
