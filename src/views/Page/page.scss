@@ -19,6 +19,68 @@
         margin: 20px;
     }
     .name {
-        margin: 20px 0;
+        margin-top: 20px;
+    }
+    .number {
+        margin: 8px 0 15px 0;
+        opacity: .6;
+    }
+
+    .types {
+        letter-spacing: 2.2px;
+        display: flex;
+        font-size: 12px;
+        font-weight: 600;
+        color: white;
+        .type {
+            display: flex;
+            background-position: center;
+            background-size: 15px;
+            background-repeat: no-repeat;
+            padding: 3px;
+            border-radius: 5px;
+            margin-right: 5px;
+        .typeImg {
+            margin-right: 5px;
+            width: 15px;
+            height: 15px;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        }
+    }
+    .imageBg {
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mensurations{
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        margin: 20px;
+        background: rgba(255,255,255,.2);
+        & > * {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 25px;
+            & p {
+                font-size: 20px;
+                font-weight: 600;
+            }
+            .infoName {
+                font-size: 10px;
+                letter-spacing: 4px;
+                opacity: .6;
+            }
+        }
     }
 }
