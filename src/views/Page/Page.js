@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Header from '../../components/Header/Header';
 import './page.scss'
+import Family from '../../components/Family/Family';
 
 const Page = () => {
 
@@ -15,10 +15,6 @@ const Page = () => {
         second: undefined,
         third: undefined
     })
-
-    const [familyFirst, setFamilyFirst] = useState()
-    const [familySecond, setFamilySecond] = useState()
-    const [familyThird, setFamilyThird] = useState()
 
     // const [types, setTypes] = useState([])
 
@@ -45,22 +41,10 @@ const Page = () => {
                                 first: first, 
                                 second: second,
                                 third: third,
-                            })
-                            console.log(family)    
+                            }) 
+                            // console.log(family)    
 
                         })
-                        .then(async () => {
-                            family.first && axios.get(`https://pokeapi.co/api/v2/pokemon/${family.first}`)
-                                .then(res => {setFamilyFirst(res.data);})
-                                .catch(err => err)
-                            family.second && axios.get(`https://pokeapi.co/api/v2/pokemon/${family.second}`)  
-                                .then(res => {setFamilySecond(res.data);})
-                                .catch(err => err)
-                            family.third && axios.get(`https://pokeapi.co/api/v2/pokemon/${family.third}`)  
-                                .then(res => {setFamilyThird(res.data)})
-                                .catch(err => err) 
-                        
-                    })
 
                 })
                 .catch(err => {console.log(err)})
@@ -133,31 +117,7 @@ const Page = () => {
                     </div>
                 </div> */}
 
-                <div className='family'> 
-
-                    { (family.second !== undefined && familySecond) ? 
-                        <a href={(family.first !== undefined && familyFirst) ? `${process.env.PUBLIC_URL}/${familyFirst.name}` : '/'}>
-                            <img src={familyFirst.sprites.other.home.front_default} />
-                            <p>{familyFirst.name}</p>
-                        </a> : null
-                    }
-
-                    {
-                    (family.second !== undefined && familySecond) ?
-                        <a href={(family.second !== undefined && familySecond) ? `${process.env.PUBLIC_URL}/${familySecond.name}` : '/'}>
-                            <img src={familySecond.sprites.other.home.front_default} />
-                            <p>{familySecond.name}</p>
-                        </a> : null
-                    }
-
-                    {
-                    (family.third !== undefined && familyThird) ?
-                        <a href={(family.third !== undefined && familyThird) ? `${process.env.PUBLIC_URL}/${familyThird.name}` : '/'}>
-                            <img src={familyThird.sprites.other.home.front_default} />
-                            <p>{familyThird.name}</p>
-                        </a> : null
-                    }
-                </div>
+                <Family family={ family } />
 
             </div>
             
