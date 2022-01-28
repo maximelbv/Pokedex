@@ -134,17 +134,29 @@ const Page = () => {
                 </div> */}
 
                 <div className='family'> 
-                    <a href={(family.first !== undefined && familyFirst) ? `${process.env.PUBLIC_URL}/${familyFirst.name}` : '/'}> 
-                        <img src={(family.first !== undefined && familyFirst) ? familyFirst.sprites.other.home.front_default : undefined} /> 
-                    </a>  
-                    
-                    <a href={(family.second !== undefined && familySecond) ? `${process.env.PUBLIC_URL}/${familySecond.name}` : '/'}> 
-                        <img src={(family.second !== undefined && familySecond) ? familySecond.sprites.other.home.front_default : undefined} /> 
-                    </a>  
 
-                    <a href={(family.third !== undefined && familyThird) ? `${process.env.PUBLIC_URL}/${familyThird.name}` : '/'}>
-                        <img src={(family.third !== undefined && familyThird) ? familyThird.sprites.other.home.front_default : undefined} />
-                    </a>  
+                    { (family.second !== undefined && familySecond) ? 
+                        <a href={(family.first !== undefined && familyFirst) ? `${process.env.PUBLIC_URL}/${familyFirst.name}` : '/'}>
+                            <img src={familyFirst.sprites.other.home.front_default} />
+                            <p>{familyFirst.name}</p>
+                        </a> : null
+                    }
+
+                    {
+                    (family.second !== undefined && familySecond) ?
+                        <a href={(family.second !== undefined && familySecond) ? `${process.env.PUBLIC_URL}/${familySecond.name}` : '/'}>
+                            <img src={familySecond.sprites.other.home.front_default} />
+                            <p>{familySecond.name}</p>
+                        </a> : null
+                    }
+
+                    {
+                    (family.third !== undefined && familyThird) ?
+                        <a href={(family.third !== undefined && familyThird) ? `${process.env.PUBLIC_URL}/${familyThird.name}` : '/'}>
+                            <img src={familyThird.sprites.other.home.front_default} />
+                            <p>{familyThird.name}</p>
+                        </a> : null
+                    }
                 </div>
 
             </div>
