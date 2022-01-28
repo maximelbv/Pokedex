@@ -23,7 +23,7 @@ function App() {
 
   return (
 
-      <BrowserRouter>
+      <BrowserRouter forceRefresh >
         <Routes>
           <Route path = "/" element={<Home />}/>
           <Route path='*' element={<NotFound />}/>

@@ -21,7 +21,6 @@ function Home() {
       result.forEach(async (pokemon) => {
         const res =  await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon.name}`)
         const data = await res.json()
-
         setAllPokemons(currentlist => [...currentlist, data])
 
       });
@@ -29,15 +28,6 @@ function Home() {
     createPokemonObject(data.results)
 
   } 
-
-  // function darkMode() {
-  //   if (document.querySelector('.darkModeInput').checked==true) {
-  //     document.querySelector('body').classList.add('darkMode')
-  //   }
-  //   else if (document.querySelector('.darkModeInput').checked==false) {
-  //     document.querySelector('body').classList.remove('darkMode').classList.add('lightMode')
-  //   }
-  // }
 
   useEffect(() => {
     getAllPokemons()
