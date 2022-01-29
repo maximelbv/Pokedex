@@ -1,0 +1,14 @@
+.ReturnHome {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 15px 20px;
+    border-radius: 50px;
+    & i {
+        font-size: 25px;
+    }
+}

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import Thumbnail from '../../components/Thumbnail/Thumbnail';
 import './home.scss'
 import Header from '../../components/Header/Header';
+import Darkmodebtn from '../../components/DarkModeBtn/DarkModeBtn';
 
 function Home() {
 
@@ -36,8 +37,10 @@ function Home() {
   return (
     <div className="Home">
 
-      <Header />
-
+      <div className='homeHeader'>
+        <Header />
+        <Darkmodebtn />
+      </div>
       <input 
         type='text' 
         className='searchInput neumorph' 

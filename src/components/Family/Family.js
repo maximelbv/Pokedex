@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import './Family.scss';
  
 const Family = ( family ) => { 
 
@@ -21,10 +22,10 @@ const Family = ( family ) => {
     }, [family ? family.family : null]);
  
     return (
-        <div className='family'>
+        <div className='Family'>
             { (family.family.second !== undefined && familySecond) ? 
                 <a href={(family.family.first !== undefined && familyFirst) ? `${process.env.PUBLIC_URL}/${familyFirst.name}` : '/'}>
-                    <img src={familyFirst.sprites.other.home.front_default} />
+                    <img src={familyFirst.sprites && familyFirst.sprites.other.home.front_default} />
                     <p>{familyFirst.name}</p>
                 </a> : null
             }
@@ -32,7 +33,7 @@ const Family = ( family ) => {
             {
             (family.family.second !== undefined && familySecond) ?
                 <a href={(family.family.second !== undefined && familySecond) ? `${process.env.PUBLIC_URL}/${familySecond.name}` : '/'}>
-                    <img src={familySecond.sprites.other.home.front_default} />
+                    <img src={familySecond.sprites && familySecond.sprites.other.home.front_default} />
                     <p>{familySecond.name}</p>
                 </a> : null
             }
@@ -40,9 +41,9 @@ const Family = ( family ) => {
             {
             (family.family.third !== undefined && familyThird) ?
                 <a href={(family.family.third !== undefined && familyThird) ? `${process.env.PUBLIC_URL}/${familyThird.name}` : '/'}>
-                    <img src={familyThird.sprites.other.home.front_default} />
+                    <img src={familyThird.sprites && familyThird.sprites.other.home.front_default} />
                     <p>{familyThird.name}</p>
-                </a> : null
+                </a> : null 
             }
         </div>
 

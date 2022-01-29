@@ -3,6 +3,7 @@ import axios from 'axios';
 import Header from '../../components/Header/Header';
 import './page.scss'
 import Family from '../../components/Family/Family';
+import ReturnHome from '../../components/GoBackBtn/ReturnHome';
 
 const Page = () => {
 
@@ -75,8 +76,11 @@ const Page = () => {
     return (
         <div className={style}>
 
-            <Header />
-
+            <div className='pageHeader'>
+                <ReturnHome />
+                <Header />
+            </div>
+            
             <div className='content'>
 
                 <div className={pokemon.types && `${pokemon.types[0].type.name}Bg imageBg`}>
@@ -117,7 +121,7 @@ const Page = () => {
                     </div>
                 </div> */}
 
-                <Family family={ family } />
+                <Family family={ family && family } />
 
             </div>
             
